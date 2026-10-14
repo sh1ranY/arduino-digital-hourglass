@@ -1,0 +1,21 @@
+PASS: four states, heartbeat, MAX chain and 60s completion in both orientations
+PASS: reset cancels pending tilt without disabling future flips
+PASS: same-loop reset/flip and B1/B2 priorities
+PASS: paused flip, two flashes and resume
+PASS: ordinary early B1 pause does not impersonate a flip
+RESULT 5/5 scenario groups passed
+PASS: existing: states, MAX chain and 60s completion in both orientations
+PASS: existing: reset cancels pending tilt, permits later flips
+PASS: existing: reset/flip and B1/B2 priorities
+PASS: existing: paused flip, flashes and resume
+PASS: existing: ordinary early pause is not flip feedback
+PASS: sound: silent boot, 120ms start, no held-repeat
+PASS: sound: pause/resume does not start a new cue
+PASS: sound: 3 x 120ms finish / 100ms gaps / no DONE repeat
+PASS: sound: B2 cancels start and completion cues
+PASS: sound: flip replaces completion with new 120ms start
+PASS: sound: paused flip and resume do not sound a start
+PASS: sound: same-loop B2 wins over B1, flip and DONE
+PASS: sound: B1 starts again from DONE
+PASS: sound: start, finish and 60s timer survive millis wrap
+RESULT 14/14 scenario groups passed

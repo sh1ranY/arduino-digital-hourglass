@@ -1,0 +1,84 @@
+Status | state=RUNNING elapsed_ms=27464 remaining_s=33 top_addr=1 grains_near/far=16/20 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=28464 remaining_s=32 top_addr=1 grains_near/far=17/19 D2/D3/D4=0/1/1
+Paused | state=PAUSED elapsed_ms=28705 remaining_s=32 top_addr=1 grains_near/far=17/19 D2/D3/D4=0/0/1
+Reset | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/0
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Orientation baseline settled | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Started | state=RUNNING elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/0/1
+Status | state=RUNNING elapsed_ms=906 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=1906 remaining_s=59 top_addr=1 grains_near/far=1/35 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=2906 remaining_s=58 top_addr=1 grains_near/far=1/35 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=3906 remaining_s=57 top_addr=1 grains_near/far=2/34 D2/D3/D4=0/1/1
+Paused | state=PAUSED elapsed_ms=4042 remaining_s=56 top_addr=1 grains_near/far=2/34 D2/D3/D4=0/0/1
+Reset | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/0
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Orientation baseline settled | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Started | state=RUNNING elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/0/1
+Status | state=RUNNING elapsed_ms=163 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=1163 remaining_s=59 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=2163 remaining_s=58 top_addr=1 grains_near/far=1/35 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=3163 remaining_s=57 top_addr=1 grains_near/far=1/35 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=4163 remaining_s=56 top_addr=1 grains_near/far=2/34 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=5163 remaining_s=55 top_addr=1 grains_near/far=3/33 D2/D3/D4=0/1/1
+Paused | state=PAUSED elapsed_ms=5432 remaining_s=55 top_addr=1 grains_near/far=3/33 D2/D3/D4=0/0/1
+Status | state=PAUSED elapsed_ms=5432 remaining_s=55 top_addr=1 grains_near/far=3/33 D2/D3/D4=0/1/1
+Reset | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/0
+Orientation baseline settled | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Started | state=RUNNING elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/0/1
+Status | state=RUNNING elapsed_ms=650 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=1650 remaining_s=59 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=2650 remaining_s=58 top_addr=1 grains_near/far=1/35 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=3650 remaining_s=57 top_addr=1 grains_near/far=2/34 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=4650 remaining_s=56 top_addr=1 grains_near/far=2/34 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=5650 remaining_s=55 top_addr=1 grains_near/far=3/33 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=6650 remaining_s=54 top_addr=1 grains_near/far=3/33 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=7650 remaining_s=53 top_addr=1 grains_near/far=4/32 D2/D3/D4=0/1/1
+Paused | state=PAUSED elapsed_ms=7744 remaining_s=53 top_addr=1 grains_near/far=4/32 D2/D3/D4=0/0/1
+Reset | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/0
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Orientation baseline settled | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=1/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=READY elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Stable flip | state=RUNNING elapsed_ms=0 remaining_s=60 top_addr=0 grains_near/far=36/0 D2/D3/D4=1/1/1
+Status | state=RUNNING elapsed_ms=26 remaining_s=60 top_addr=0 grains_near/far=36/0 D2/D3/D4=1/1/1
+Status | state=RUNNING elapsed_ms=1026 remaining_s=59 top_addr=0 grains_near/far=36/0 D2/D3/D4=1/1/1
+Stable flip | state=RUNNING elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=224 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=1224 remaining_s=59 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Stable flip | state=RUNNING elapsed_ms=0 remaining_s=60 top_addr=0 grains_near/far=36/0 D2/D3/D4=1/1/1
+Status | state=RUNNING elapsed_ms=122 remaining_s=60 top_addr=0 grains_near/far=36/0 D2/D3/D4=1/1/1
+Status | state=RUNNING elapsed_ms=1122 remaining_s=59 top_addr=0 grains_near/far=36/0 D2/D3/D4=1/1/1
+Stable flip | state=RUNNING elapsed_ms=0 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=194 remaining_s=60 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1
+Status | state=RUNNING elapsed_ms=1194 remaining_s=59 top_addr=1 grains_near/far=0/36 D2/D3/D4=0/1/1

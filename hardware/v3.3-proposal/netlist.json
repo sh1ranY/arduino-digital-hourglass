@@ -1,0 +1,81 @@
+{
+  "status": "Proposed hardware, not bench accepted",
+  "nets": {
+    "+5V": [
+      "U1.5V",
+      "U2.VCC",
+      "U3.VCC",
+      "U4.VCC_IN",
+      "BZ1.+",
+      "D1.K"
+    ],
+    "GND": [
+      "U1.GND",
+      "U2.GND",
+      "U3.GND",
+      "U4.GND",
+      "Q1.E",
+      "R2.2",
+      "S2.1",
+      "S3.1"
+    ],
+    "DATA": [
+      "U1.D11",
+      "U2.DIN"
+    ],
+    "CASCADE": [
+      "U2.DOUT",
+      "U3.DIN"
+    ],
+    "LOAD": [
+      "U1.D10",
+      "U2.LOAD",
+      "U3.LOAD"
+    ],
+    "CLK": [
+      "U1.D13",
+      "U2.CLK",
+      "U3.CLK"
+    ],
+    "SDA": [
+      "U1.A4",
+      "U4.SDA"
+    ],
+    "SCL": [
+      "U1.A5",
+      "U4.SCL"
+    ],
+    "BUZZER_D5": [
+      "U1.D5",
+      "R1.1"
+    ],
+    "BASE": [
+      "R1.2",
+      "Q1.B",
+      "R2.1"
+    ],
+    "COLLECTOR": [
+      "Q1.C",
+      "BZ1.-",
+      "D1.A"
+    ],
+    "START_PAUSE": [
+      "U1.D3",
+      "S2.2"
+    ],
+    "RESET": [
+      "U1.D4",
+      "S3.2"
+    ]
+  },
+  "unused": [
+    "U1.D2",
+    "U3.DOUT",
+    "U4.3.3V",
+    "U4.FSYNC",
+    "U4.INTA",
+    "U4.DRDY"
+  ],
+  "q1_actual_lead_order_verified": false,
+  "gy87_variant": "Standard GY87 with onboard regulator and bidirectional I2C level conversion; verify actual module before connection."
+}

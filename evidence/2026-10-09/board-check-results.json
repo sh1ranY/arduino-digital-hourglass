@@ -1,0 +1,138 @@
+{
+  "checks": [
+    {
+      "name": "Normal baseline READY",
+      "passed": true,
+      "evidence": {
+        "ms": 126175,
+        "state": "READY",
+        "elapsed": 0,
+        "near": 0,
+        "far": 36,
+        "orientation": 0,
+        "d2": 0,
+        "d3": 1,
+        "d4": 1,
+        "corners": 0
+      }
+    },
+    {
+      "name": "Start advances time",
+      "passed": true,
+      "evidence": {
+        "ms": 129162,
+        "state": "RUNNING",
+        "elapsed": 2233,
+        "near": 1,
+        "far": 35,
+        "orientation": 0,
+        "d2": 0,
+        "d3": 1,
+        "d4": 1,
+        "corners": 0
+      }
+    },
+    {
+      "name": "Pause freezes elapsed",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ms": 129929,
+          "state": "PAUSED",
+          "elapsed": 2991,
+          "near": 1,
+          "far": 35,
+          "orientation": 0,
+          "d2": 0,
+          "d3": 1,
+          "d4": 1,
+          "corners": 0
+        },
+        "after": {
+          "ms": 132676,
+          "state": "PAUSED",
+          "elapsed": 2991,
+          "near": 1,
+          "far": 35,
+          "orientation": 0,
+          "d2": 0,
+          "d3": 1,
+          "d4": 1,
+          "corners": 0
+        }
+      }
+    },
+    {
+      "name": "Resume continues",
+      "passed": true,
+      "evidence": {
+        "ms": 135178,
+        "state": "RUNNING",
+        "elapsed": 4732,
+        "near": 2,
+        "far": 34,
+        "orientation": 0,
+        "d2": 0,
+        "d3": 1,
+        "d4": 1,
+        "corners": 0
+      }
+    },
+    {
+      "name": "Reset clears elapsed",
+      "passed": true,
+      "evidence": {
+        "ms": 136742,
+        "state": "READY",
+        "elapsed": 0,
+        "near": 0,
+        "far": 36,
+        "orientation": 0,
+        "d2": 0,
+        "d3": 1,
+        "d4": 1,
+        "corners": 0
+      }
+    },
+    {
+      "name": "Grain count conserved",
+      "passed": true,
+      "evidence": {
+        "samples": 17
+      }
+    },
+    {
+      "name": "60 seconds completion",
+      "passed": true,
+      "evidence": {
+        "ms": 199424,
+        "state": "DONE",
+        "elapsed": 60000,
+        "near": 36,
+        "far": 0,
+        "orientation": 0,
+        "d2": 0,
+        "d3": 1,
+        "d4": 1,
+        "corners": 0
+      }
+    },
+    {
+      "name": "All 36 grains reach bottom",
+      "passed": true,
+      "evidence": {
+        "ms": 199424,
+        "state": "DONE",
+        "elapsed": 60000,
+        "near": 36,
+        "far": 0,
+        "orientation": 0,
+        "d2": 0,
+        "d3": 1,
+        "d4": 1,
+        "corners": 0
+      }
+    }
+  ],
+  "scope": "Serial commands on physical UNO R4; mechanical controls are validated separately."
+}

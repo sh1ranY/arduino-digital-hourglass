@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "author": "ELEC281 v3.1: 18 jumpers through breadboard; gray lines are modeled inserted component legs",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-breadboard",
+      "id": "bb1",
+      "top": 280,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b1",
+      "top": 370.9,
+      "left": 156.7,
+      "rotate": 270,
+      "attrs": {
+        "color": "green",
+        "label": "B1 Start/Pause",
+        "key": "s",
+        "xray": "1"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b2",
+      "top": 370.9,
+      "left": 233.5,
+      "rotate": 270,
+      "attrs": {
+        "color": "red",
+        "label": "B2 Reset",
+        "key": "r",
+        "xray": "1"
+      }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "sw1",
+      "top": 402.6,
+      "left": 77.1,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-max7219-matrix",
+      "id": "matrix1",
+      "top": 40,
+      "left": 760,
+      "rotate": 45,
+      "attrs": {
+        "chain": "1"
+      }
+    },
+    {
+      "type": "wokwi-max7219-matrix",
+      "id": "matrix2",
+      "top": 190,
+      "left": 760,
+      "rotate": 45,
+      "attrs": {
+        "chain": "1"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "uno:5V",
+      "bb1:tp.1",
+      "red",
+      [
+        "v30",
+        "h-150",
+        "v65"
+      ]
+    ],
+    [
+      "uno:GND.2",
+      "bb1:tn.1",
+      "black",
+      [
+        "v20",
+        "h-170",
+        "v85"
+      ]
+    ],
+    [
+      "bb1:tp.2",
+      "matrix1:V+",
+      "red",
+      [
+        "v-45",
+        "h690"
+      ]
+    ],
+    [
+      "bb1:tn.2",
+      "matrix1:GND",
+      "black",
+      [
+        "v-35",
+        "h710"
+      ]
+    ],
+    [
+      "uno:11",
+      "matrix1:DIN",
+      "green",
+      [
+        "v-60",
+        "h520"
+      ]
+    ],
+    [
+      "uno:13",
+      "matrix1:CLK",
+      "blue",
+      [
+        "v-85",
+        "h550"
+      ]
+    ],
+    [
+      "uno:10",
+      "matrix1:CS",
+      "purple",
+      [
+        "v-35",
+        "h490"
+      ]
+    ],
+    [
+      "bb1:tp.3",
+      "matrix2:V+",
+      "red",
+      [
+        "v-65",
+        "h735"
+      ]
+    ],
+    [
+      "bb1:tn.3",
+      "matrix2:GND",
+      "black",
+      [
+        "v-55",
+        "h750"
+      ]
+    ],
+    [
+      "matrix1:DOUT",
+      "matrix2:DIN",
+      "green",
+      [
+        "h130",
+        "v80"
+      ]
+    ],
+    [
+      "matrix1:CS.2",
+      "matrix2:CS",
+      "purple",
+      [
+        "h145",
+        "v80"
+      ]
+    ],
+    [
+      "matrix1:CLK.2",
+      "matrix2:CLK",
+      "blue",
+      [
+        "h160",
+        "v80"
+      ]
+    ],
+    [
+      "bb1:8b.f",
+      "uno:2",
+      "orange",
+      [
+        "v130",
+        "h-200",
+        "v-600"
+      ]
+    ],
+    [
+      "bb1:7b.f",
+      "bb1:tn.4",
+      "black",
+      [
+        "v-75"
+      ]
+    ],
+    [
+      "bb1:15t.a",
+      "uno:3",
+      "green",
+      [
+        "v-85",
+        "h200",
+        "v-400"
+      ]
+    ],
+    [
+      "bb1:17b.j",
+      "bb1:tn.5",
+      "black",
+      [
+        "v-55"
+      ]
+    ],
+    [
+      "bb1:23t.a",
+      "uno:4",
+      "blue",
+      [
+        "v-105",
+        "h200",
+        "v-400"
+      ]
+    ],
+    [
+      "bb1:25b.j",
+      "bb1:tn.6",
+      "black",
+      [
+        "v-65"
+      ]
+    ],
+    [
+      "b1:1.r",
+      "bb1:15t.d",
+      "gray",
+      []
+    ],
+    [
+      "b1:1.l",
+      "bb1:15b.g",
+      "gray",
+      []
+    ],
+    [
+      "b1:2.r",
+      "bb1:17t.d",
+      "gray",
+      []
+    ],
+    [
+      "b1:2.l",
+      "bb1:17b.g",
+      "gray",
+      []
+    ],
+    [
+      "b2:1.r",
+      "bb1:23t.d",
+      "gray",
+      []
+    ],
+    [
+      "b2:1.l",
+      "bb1:23b.g",
+      "gray",
+      []
+    ],
+    [
+      "b2:2.r",
+      "bb1:25t.d",
+      "gray",
+      []
+    ],
+    [
+      "b2:2.l",
+      "bb1:25b.g",
+      "gray",
+      []
+    ],
+    [
+      "sw1:1",
+      "bb1:7b.j",
+      "gray",
+      []
+    ],
+    [
+      "sw1:2",
+      "bb1:8b.j",
+      "gray",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
