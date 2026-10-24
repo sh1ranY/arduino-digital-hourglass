@@ -1,0 +1,19 @@
+{
+  "seconds": 300.22,
+  "samples": 343,
+  "all_bench_flags_zero": true,
+  "max_fault_count": 0,
+  "max_recovery_count": 0,
+  "manual_pause_observed": true,
+  "manual_resume_observed": true,
+  "auto_hold_and_release_observed": true,
+  "formal_complete_record_observed": false,
+  "last_runtime": {
+    "utc": "2026-10-23T14:14:01.135541+00:00",
+    "session_s": 299.459,
+    "text": "Status | fw=3.9 state=READY duration_s=60 setting=0 selected=1 editing=1 elapsed_ms=0 remaining_s=60 top_addr=0 grains_near/far=36/0 imu=FACE_HOLD sensor_hold=1 ax/ay/az=3906/2170/-17774 D3/D4=1/1 uptime_ms=323002 sample_age_ms=5 faults=0 recoveries=0 pulses=0 i2c_err=0 rx=14 bus=UNCHECKED logs_dropped=7 bench=0"
+  },
+  "serial_closed": true,
+  "duration_limitation": "Five-minute observation only, not an hours/days soak test",
+  "user_final_feedback": "All normal"
+}

@@ -1,0 +1,905 @@
+{
+  "kind": "host software scenarios with Arduino/I2C doubles; not physical tests",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "files_sha256": {
+    "firmware/Hourglass_v39/ClockDisplay.h": "960d45966f48aa54c0e37ce18c85d055584fa072fcd00649dd40f2eed4748cdd",
+    "firmware/Hourglass_v39/Hourglass_v39.ino": "3af95fb69432b124e86e9b76cae52046d89de360e44ddf313c216919600a1900",
+    "firmware/Hourglass_v39/PresetDisplay.h": "b54b53c078318f5f12f3a47a30069c14f3d82911f7a45f30d843586b9cc1f4e8",
+    "tests/v39/Arduino.h": "1cae286bd025c5ecf79bb514179da950c90ab5c044d9e19d2ea8822d1eee0ef5",
+    "tests/v39/Wire.h": "001f7ae2650a1c36a83641a5c280a794fcc71e39c53c54abceb01720bd354c26",
+    "tests/v39/aux_clock_behavior_tests.cpp": "a8f84c6e6bacde2eb082e67248f1575bf452a8f97033f319551feacb33977ab1",
+    "tests/v39/bus_recovery_tests.cpp": "547c39ddcd287c649917c2ffd3beaa73c1b3f7a36d44b231d5896cf200d3ba4c",
+    "tests/v39/compact_upper_tests.cpp": "eb781efc581388514ee0bba4d4fecb457084da9c3b46721dae5be9f7e0efa457",
+    "tests/v39/direction_tests.cpp": "5ee694bb69426e85e9ccd47312b85c928211489cc37b21c3b69b8aee77d818d4",
+    "tests/v39/finish_flash_tests.cpp": "3a9d575297a0499ce381effee884c336925a9c65ad1c63385221a05aa6108bcb",
+    "tests/v39/host_tests.cpp": "0d47fc6287fb42f50e175432f7b9aa29236698c701c5c8a5e35918e2d65482fc",
+    "tests/v39/preset_behavior_tests.cpp": "df9a802d4a139e7ac21a3e93711ae56644ca9bf13235df326426afa163c3b662",
+    "tests/v39/recovery_fault_tests.cpp": "43deb1ed4e22f4371cca73a5cc4f7726caa5fba96e9613678cc1dd4f3056a863",
+    "tests/v39/run.py": "945f48ca18b79943c76dbb88a9559b79e09763029ec3f5a545e032f7e4db651e"
+  },
+  "runs": [
+    {
+      "suite": "baseline-native",
+      "flags": [],
+      "cases": [
+        {
+          "name": "button_held_at_power_up",
+          "exit": 0,
+          "output": "PASS button_held_at_power_up | I2C_reads=106 MAX_latches=318 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "continuous_xy_gravity",
+          "exit": 0,
+          "output": "PASS continuous_xy_gravity | I2C_reads=320 MAX_latches=886 D5_ons=1 elapsed_ms=4832 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "cycle_inverted",
+          "exit": 0,
+          "output": "PASS cycle_inverted | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "cycle_upright",
+          "exit": 0,
+          "output": "PASS cycle_upright | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "display_centroid_tracks_tilt",
+          "exit": 0,
+          "output": "centroid_left=5.22222/3.27778 centroid_right=3.27778/5.22222\nPASS display_centroid_tracks_tilt | I2C_reads=3358 MAX_latches=8998 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "face_flat_hold_resume",
+          "exit": 0,
+          "output": "PASS face_flat_hold_resume | I2C_reads=500 MAX_latches=1374 D5_ons=1 elapsed_ms=4931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "fault_recovery_opposite_once",
+          "exit": 0,
+          "output": "PASS fault_recovery_opposite_once | I2C_reads=387 MAX_latches=1206 D5_ons=2 elapsed_ms=3161 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "finish_beeps_millis_rollover",
+          "exit": 0,
+          "output": "PASS finish_beeps_millis_rollover | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "gyro_motion_candidate",
+          "exit": 0,
+          "output": "PASS gyro_motion_candidate | I2C_reads=265 MAX_latches=750 D5_ons=2 elapsed_ms=681 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "hold_hysteresis",
+          "exit": 0,
+          "output": "PASS hold_hysteresis | I2C_reads=360 MAX_latches=998 D5_ons=1 elapsed_ms=2931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "horizontal_hold_resume",
+          "exit": 0,
+          "output": "PASS horizontal_hold_resume | I2C_reads=500 MAX_latches=1374 D5_ons=1 elapsed_ms=4931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_address_0x69",
+          "exit": 0,
+          "output": "PASS i2c_address_0x69 | I2C_reads=180 MAX_latches=510 D5_ons=1 elapsed_ms=2032 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_nack_recovery",
+          "exit": 0,
+          "output": "PASS i2c_nack_recovery | I2C_reads=239 MAX_latches=814 D5_ons=1 elapsed_ms=2761 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_short_read_recovery",
+          "exit": 0,
+          "output": "PASS i2c_short_read_recovery | I2C_reads=240 MAX_latches=814 D5_ons=1 elapsed_ms=2761 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "initial_face_flat_hold",
+          "exit": 0,
+          "output": "PASS initial_face_flat_hold | I2C_reads=140 MAX_latches=398 D5_ons=0 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "invalid_acceleration_hold",
+          "exit": 0,
+          "output": "PASS invalid_acceleration_hold | I2C_reads=325 MAX_latches=902 D5_ons=1 elapsed_ms=2431 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "manual_pause_during_auto_hold",
+          "exit": 0,
+          "output": "PASS manual_pause_during_auto_hold | I2C_reads=248 MAX_latches=710 D5_ons=1 elapsed_ms=1750 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "manual_pause_resume",
+          "exit": 0,
+          "output": "PASS manual_pause_resume | I2C_reads=3259 MAX_latches=8750 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "millis_rollover",
+          "exit": 0,
+          "output": "PASS millis_rollover | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "missing_startup_recovery",
+          "exit": 0,
+          "output": "PASS missing_startup_recovery | I2C_reads=90 MAX_latches=550 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "paused_flip_quiet",
+          "exit": 0,
+          "output": "PASS paused_flip_quiet | I2C_reads=291 MAX_latches=814 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "read_fault_cancels_start",
+          "exit": 0,
+          "output": "PASS read_fault_cancels_start | I2C_reads=132 MAX_latches=534 D5_ons=1 elapsed_ms=625 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_cancels_finish",
+          "exit": 0,
+          "output": "PASS reset_cancels_finish | I2C_reads=3156 MAX_latches=8462 D5_ons=2 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_exact_done",
+          "exit": 0,
+          "output": "PASS reset_exact_done | I2C_reads=3078 MAX_latches=8246 D5_ons=1 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_priority",
+          "exit": 0,
+          "output": "PASS reset_priority | I2C_reads=241 MAX_latches=702 D5_ons=1 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "serial_block_finish_3x120ms",
+          "exit": 0,
+          "output": "PASS serial_block_finish_3x120ms | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "serial_block_start_120ms",
+          "exit": 0,
+          "output": "PASS serial_block_start_120ms | I2C_reads=84 MAX_latches=262 D5_ons=1 elapsed_ms=120 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "stable_flip_no_repeat",
+          "exit": 0,
+          "output": "PASS stable_flip_no_repeat | I2C_reads=440 MAX_latches=1222 D5_ons=3 elapsed_ms=581 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "start_120ms",
+          "exit": 0,
+          "output": "PASS start_120ms | I2C_reads=184 MAX_latches=526 D5_ons=1 elapsed_ms=2120 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "startup_registers",
+          "exit": 0,
+          "output": "PASS startup_registers | I2C_reads=76 MAX_latches=238 D5_ons=0 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "untrusted_inversion_no_reset",
+          "exit": 0,
+          "output": "PASS untrusted_inversion_no_reset | I2C_reads=265 MAX_latches=750 D5_ons=1 elapsed_ms=2431 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "wrong_whoami_recovery",
+          "exit": 0,
+          "output": "PASS wrong_whoami_recovery | I2C_reads=92 MAX_latches=550 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        }
+      ]
+    },
+    {
+      "suite": "baseline-calibration",
+      "flags": [
+        "-DHOURGLASS_CORNER_CALIBRATION=1"
+      ],
+      "cases": [
+        {
+          "name": "calibration_silent",
+          "exit": 0,
+          "output": "PASS calibration_silent | I2C_reads=3623 MAX_latches=22 D5_ons=0 elapsed_ms=0 blocking_delay_ms=0\n"
+        }
+      ]
+    },
+    {
+      "suite": "baseline-avr-api",
+      "flags": [
+        "-DARDUINO_ARCH_AVR=1"
+      ],
+      "cases": [
+        {
+          "name": "button_held_at_power_up",
+          "exit": 0,
+          "output": "PASS button_held_at_power_up | I2C_reads=106 MAX_latches=318 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "continuous_xy_gravity",
+          "exit": 0,
+          "output": "PASS continuous_xy_gravity | I2C_reads=320 MAX_latches=886 D5_ons=1 elapsed_ms=4832 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "cycle_inverted",
+          "exit": 0,
+          "output": "PASS cycle_inverted | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "cycle_upright",
+          "exit": 0,
+          "output": "PASS cycle_upright | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "display_centroid_tracks_tilt",
+          "exit": 0,
+          "output": "centroid_left=5.22222/3.27778 centroid_right=3.27778/5.22222\nPASS display_centroid_tracks_tilt | I2C_reads=3358 MAX_latches=8998 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "face_flat_hold_resume",
+          "exit": 0,
+          "output": "PASS face_flat_hold_resume | I2C_reads=500 MAX_latches=1374 D5_ons=1 elapsed_ms=4931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "fault_recovery_opposite_once",
+          "exit": 0,
+          "output": "PASS fault_recovery_opposite_once | I2C_reads=387 MAX_latches=1206 D5_ons=2 elapsed_ms=3161 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "finish_beeps_millis_rollover",
+          "exit": 0,
+          "output": "PASS finish_beeps_millis_rollover | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "gyro_motion_candidate",
+          "exit": 0,
+          "output": "PASS gyro_motion_candidate | I2C_reads=265 MAX_latches=750 D5_ons=2 elapsed_ms=681 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "hold_hysteresis",
+          "exit": 0,
+          "output": "PASS hold_hysteresis | I2C_reads=360 MAX_latches=998 D5_ons=1 elapsed_ms=2931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "horizontal_hold_resume",
+          "exit": 0,
+          "output": "PASS horizontal_hold_resume | I2C_reads=500 MAX_latches=1374 D5_ons=1 elapsed_ms=4931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_address_0x69",
+          "exit": 0,
+          "output": "PASS i2c_address_0x69 | I2C_reads=180 MAX_latches=510 D5_ons=1 elapsed_ms=2032 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_nack_recovery",
+          "exit": 0,
+          "output": "PASS i2c_nack_recovery | I2C_reads=239 MAX_latches=814 D5_ons=1 elapsed_ms=2761 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_short_read_recovery",
+          "exit": 0,
+          "output": "PASS i2c_short_read_recovery | I2C_reads=240 MAX_latches=814 D5_ons=1 elapsed_ms=2761 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "initial_face_flat_hold",
+          "exit": 0,
+          "output": "PASS initial_face_flat_hold | I2C_reads=140 MAX_latches=398 D5_ons=0 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "invalid_acceleration_hold",
+          "exit": 0,
+          "output": "PASS invalid_acceleration_hold | I2C_reads=325 MAX_latches=902 D5_ons=1 elapsed_ms=2431 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "manual_pause_during_auto_hold",
+          "exit": 0,
+          "output": "PASS manual_pause_during_auto_hold | I2C_reads=248 MAX_latches=710 D5_ons=1 elapsed_ms=1750 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "manual_pause_resume",
+          "exit": 0,
+          "output": "PASS manual_pause_resume | I2C_reads=3259 MAX_latches=8750 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "millis_rollover",
+          "exit": 0,
+          "output": "PASS millis_rollover | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "missing_startup_recovery",
+          "exit": 0,
+          "output": "PASS missing_startup_recovery | I2C_reads=90 MAX_latches=550 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "paused_flip_quiet",
+          "exit": 0,
+          "output": "PASS paused_flip_quiet | I2C_reads=291 MAX_latches=814 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "read_fault_cancels_start",
+          "exit": 0,
+          "output": "PASS read_fault_cancels_start | I2C_reads=132 MAX_latches=534 D5_ons=1 elapsed_ms=625 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_cancels_finish",
+          "exit": 0,
+          "output": "PASS reset_cancels_finish | I2C_reads=3156 MAX_latches=8462 D5_ons=2 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_exact_done",
+          "exit": 0,
+          "output": "PASS reset_exact_done | I2C_reads=3078 MAX_latches=8246 D5_ons=1 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_priority",
+          "exit": 0,
+          "output": "PASS reset_priority | I2C_reads=241 MAX_latches=702 D5_ons=1 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "serial_block_finish_3x120ms",
+          "exit": 0,
+          "output": "PASS serial_block_finish_3x120ms | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "serial_block_start_120ms",
+          "exit": 0,
+          "output": "PASS serial_block_start_120ms | I2C_reads=84 MAX_latches=262 D5_ons=1 elapsed_ms=120 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "stable_flip_no_repeat",
+          "exit": 0,
+          "output": "PASS stable_flip_no_repeat | I2C_reads=440 MAX_latches=1222 D5_ons=3 elapsed_ms=581 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "start_120ms",
+          "exit": 0,
+          "output": "PASS start_120ms | I2C_reads=184 MAX_latches=526 D5_ons=1 elapsed_ms=2120 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "startup_registers",
+          "exit": 0,
+          "output": "PASS startup_registers | I2C_reads=76 MAX_latches=238 D5_ons=0 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "untrusted_inversion_no_reset",
+          "exit": 0,
+          "output": "PASS untrusted_inversion_no_reset | I2C_reads=265 MAX_latches=750 D5_ons=1 elapsed_ms=2431 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "wrong_whoami_recovery",
+          "exit": 0,
+          "output": "PASS wrong_whoami_recovery | I2C_reads=92 MAX_latches=550 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        }
+      ]
+    },
+    {
+      "suite": "baseline-r4-bridge",
+      "flags": [
+        "-DARDUINO_UNOR4_WIFI=1",
+        "-DNO_USB=1"
+      ],
+      "cases": [
+        {
+          "name": "button_held_at_power_up",
+          "exit": 0,
+          "output": "PASS button_held_at_power_up | I2C_reads=106 MAX_latches=318 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "continuous_xy_gravity",
+          "exit": 0,
+          "output": "PASS continuous_xy_gravity | I2C_reads=320 MAX_latches=886 D5_ons=1 elapsed_ms=4832 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "cycle_inverted",
+          "exit": 0,
+          "output": "PASS cycle_inverted | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "cycle_upright",
+          "exit": 0,
+          "output": "PASS cycle_upright | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "display_centroid_tracks_tilt",
+          "exit": 0,
+          "output": "centroid_left=5.22222/3.27778 centroid_right=3.27778/5.22222\nPASS display_centroid_tracks_tilt | I2C_reads=3358 MAX_latches=8998 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "face_flat_hold_resume",
+          "exit": 0,
+          "output": "PASS face_flat_hold_resume | I2C_reads=500 MAX_latches=1374 D5_ons=1 elapsed_ms=4931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "fault_recovery_opposite_once",
+          "exit": 0,
+          "output": "PASS fault_recovery_opposite_once | I2C_reads=387 MAX_latches=1206 D5_ons=2 elapsed_ms=3161 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "finish_beeps_millis_rollover",
+          "exit": 0,
+          "output": "PASS finish_beeps_millis_rollover | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "gyro_motion_candidate",
+          "exit": 0,
+          "output": "PASS gyro_motion_candidate | I2C_reads=265 MAX_latches=750 D5_ons=2 elapsed_ms=681 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "hold_hysteresis",
+          "exit": 0,
+          "output": "PASS hold_hysteresis | I2C_reads=360 MAX_latches=998 D5_ons=1 elapsed_ms=2931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "horizontal_hold_resume",
+          "exit": 0,
+          "output": "PASS horizontal_hold_resume | I2C_reads=500 MAX_latches=1374 D5_ons=1 elapsed_ms=4931 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_address_0x69",
+          "exit": 0,
+          "output": "PASS i2c_address_0x69 | I2C_reads=180 MAX_latches=510 D5_ons=1 elapsed_ms=2032 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_nack_recovery",
+          "exit": 0,
+          "output": "PASS i2c_nack_recovery | I2C_reads=239 MAX_latches=814 D5_ons=1 elapsed_ms=2761 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "i2c_short_read_recovery",
+          "exit": 0,
+          "output": "PASS i2c_short_read_recovery | I2C_reads=240 MAX_latches=814 D5_ons=1 elapsed_ms=2761 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "initial_face_flat_hold",
+          "exit": 0,
+          "output": "PASS initial_face_flat_hold | I2C_reads=140 MAX_latches=398 D5_ons=0 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "invalid_acceleration_hold",
+          "exit": 0,
+          "output": "PASS invalid_acceleration_hold | I2C_reads=325 MAX_latches=902 D5_ons=1 elapsed_ms=2431 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "manual_pause_during_auto_hold",
+          "exit": 0,
+          "output": "PASS manual_pause_during_auto_hold | I2C_reads=248 MAX_latches=710 D5_ons=1 elapsed_ms=1750 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "manual_pause_resume",
+          "exit": 0,
+          "output": "PASS manual_pause_resume | I2C_reads=3259 MAX_latches=8750 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "millis_rollover",
+          "exit": 0,
+          "output": "PASS millis_rollover | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "missing_startup_recovery",
+          "exit": 0,
+          "output": "PASS missing_startup_recovery | I2C_reads=90 MAX_latches=550 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "paused_flip_quiet",
+          "exit": 0,
+          "output": "PASS paused_flip_quiet | I2C_reads=291 MAX_latches=814 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "read_fault_cancels_start",
+          "exit": 0,
+          "output": "PASS read_fault_cancels_start | I2C_reads=132 MAX_latches=534 D5_ons=1 elapsed_ms=625 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_cancels_finish",
+          "exit": 0,
+          "output": "PASS reset_cancels_finish | I2C_reads=3156 MAX_latches=8462 D5_ons=2 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_exact_done",
+          "exit": 0,
+          "output": "PASS reset_exact_done | I2C_reads=3078 MAX_latches=8246 D5_ons=1 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "reset_priority",
+          "exit": 0,
+          "output": "PASS reset_priority | I2C_reads=241 MAX_latches=702 D5_ons=1 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "serial_block_finish_3x120ms",
+          "exit": 0,
+          "output": "PASS serial_block_finish_3x120ms | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "serial_block_start_120ms",
+          "exit": 0,
+          "output": "PASS serial_block_start_120ms | I2C_reads=84 MAX_latches=262 D5_ons=1 elapsed_ms=120 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "stable_flip_no_repeat",
+          "exit": 0,
+          "output": "PASS stable_flip_no_repeat | I2C_reads=440 MAX_latches=1222 D5_ons=3 elapsed_ms=581 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "start_120ms",
+          "exit": 0,
+          "output": "PASS start_120ms | I2C_reads=184 MAX_latches=526 D5_ons=1 elapsed_ms=2120 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "startup_registers",
+          "exit": 0,
+          "output": "PASS startup_registers | I2C_reads=76 MAX_latches=238 D5_ons=0 elapsed_ms=0 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "untrusted_inversion_no_reset",
+          "exit": 0,
+          "output": "PASS untrusted_inversion_no_reset | I2C_reads=265 MAX_latches=750 D5_ons=1 elapsed_ms=2431 blocking_delay_ms=0\n"
+        },
+        {
+          "name": "wrong_whoami_recovery",
+          "exit": 0,
+          "output": "PASS wrong_whoami_recovery | I2C_reads=92 MAX_latches=550 D5_ons=1 elapsed_ms=32 blocking_delay_ms=0\n"
+        }
+      ]
+    },
+    {
+      "suite": "recovery",
+      "flags": [
+        "-DARDUINO_ARCH_RENESAS_UNO=1"
+      ],
+      "cases": [
+        {
+          "name": "controller_latch_preserves_running",
+          "exit": 0,
+          "output": "PASS controller_latch_preserves_running\n"
+        },
+        {
+          "name": "done_survives_recovery_quiet",
+          "exit": 0,
+          "output": "PASS done_survives_recovery_quiet\n"
+        },
+        {
+          "name": "healthy_horizontal_hold_no_bus_reset",
+          "exit": 0,
+          "output": "PASS healthy_horizontal_hold_no_bus_reset\n"
+        },
+        {
+          "name": "manual_pause_survives_recovery",
+          "exit": 0,
+          "output": "PASS manual_pause_survives_recovery\n"
+        },
+        {
+          "name": "mpu_device_reset_recovers",
+          "exit": 0,
+          "output": "PASS mpu_device_reset_recovers\n"
+        },
+        {
+          "name": "opposite_pose_recovery_flip_once",
+          "exit": 0,
+          "output": "PASS opposite_pose_recovery_flip_once\n"
+        },
+        {
+          "name": "persistent_missing_sensor_controls",
+          "exit": 0,
+          "output": "PASS persistent_missing_sensor_controls\n"
+        },
+        {
+          "name": "recovery_across_millis_wrap",
+          "exit": 0,
+          "output": "PASS recovery_across_millis_wrap\n"
+        },
+        {
+          "name": "settings_survive_recovery",
+          "exit": 0,
+          "output": "PASS settings_survive_recovery\n"
+        },
+        {
+          "name": "usb_full_buffer_does_not_block",
+          "exit": 0,
+          "output": "PASS usb_full_buffer_does_not_block\n"
+        }
+      ]
+    },
+    {
+      "suite": "bus-native",
+      "flags": [],
+      "cases": [
+        {
+          "name": "one_hundred_recoveries",
+          "exit": 0,
+          "output": "PASS one_hundred_recoveries\n"
+        },
+        {
+          "name": "scl_stuck_bounded",
+          "exit": 0,
+          "output": "PASS scl_stuck_bounded\n"
+        },
+        {
+          "name": "sda_release_three_clocks",
+          "exit": 0,
+          "output": "PASS sda_release_three_clocks\n"
+        },
+        {
+          "name": "sda_stuck_nine_clocks",
+          "exit": 0,
+          "output": "PASS sda_stuck_nine_clocks\n"
+        },
+        {
+          "name": "serial_one_byte_fifo",
+          "exit": 0,
+          "output": "PASS serial_one_byte_fifo\n"
+        },
+        {
+          "name": "slow_config_full_waits",
+          "exit": 0,
+          "output": "PASS slow_config_full_waits\n"
+        }
+      ]
+    },
+    {
+      "suite": "bus-bridge",
+      "flags": [
+        "-DARDUINO_UNOR4_WIFI=1",
+        "-DNO_USB=1"
+      ],
+      "cases": [
+        {
+          "name": "one_hundred_recoveries",
+          "exit": 0,
+          "output": "PASS one_hundred_recoveries\n"
+        },
+        {
+          "name": "scl_stuck_bounded",
+          "exit": 0,
+          "output": "PASS scl_stuck_bounded\n"
+        },
+        {
+          "name": "sda_release_three_clocks",
+          "exit": 0,
+          "output": "PASS sda_release_three_clocks\n"
+        },
+        {
+          "name": "sda_stuck_nine_clocks",
+          "exit": 0,
+          "output": "PASS sda_stuck_nine_clocks\n"
+        },
+        {
+          "name": "serial_one_byte_fifo",
+          "exit": 0,
+          "output": "PASS serial_one_byte_fifo\n"
+        },
+        {
+          "name": "slow_config_full_waits",
+          "exit": 0,
+          "output": "PASS slow_config_full_waits\n"
+        }
+      ]
+    },
+    {
+      "suite": "direction",
+      "flags": [],
+      "cases": [
+        {
+          "name": "all_pixels_inverted",
+          "exit": 0,
+          "output": "PASS all_pixels_inverted\n"
+        },
+        {
+          "name": "all_pixels_upright",
+          "exit": 0,
+          "output": "PASS all_pixels_upright\n"
+        },
+        {
+          "name": "photographed_handedness",
+          "exit": 0,
+          "output": "PASS photographed_handedness\n"
+        },
+        {
+          "name": "photographed_necks",
+          "exit": 0,
+          "output": "PASS photographed_necks\n"
+        }
+      ]
+    },
+    {
+      "suite": "compact_upper",
+      "flags": [],
+      "cases": [
+        {
+          "name": "avalanche_inverted",
+          "exit": 0,
+          "output": "PASS avalanche_inverted\n"
+        },
+        {
+          "name": "avalanche_upright",
+          "exit": 0,
+          "output": "PASS avalanche_upright\n"
+        },
+        {
+          "name": "supported_inverted",
+          "exit": 0,
+          "output": "PASS supported_inverted\n"
+        },
+        {
+          "name": "supported_upright",
+          "exit": 0,
+          "output": "PASS supported_upright\n"
+        },
+        {
+          "name": "upper_tilt_response",
+          "exit": 0,
+          "output": "PASS upper_tilt_response\n"
+        }
+      ]
+    },
+    {
+      "suite": "finish_flash",
+      "flags": [],
+      "cases": [
+        {
+          "name": "finish_flash_fault_cancel",
+          "exit": 0,
+          "output": "PASS finish_flash_fault_cancel | I2C_reads=3140 MAX_latches=8550 D5_ons=2 elapsed_ms=60000\n"
+        },
+        {
+          "name": "finish_flash_flip_cancel",
+          "exit": 0,
+          "output": "PASS finish_flash_flip_cancel | I2C_reads=3144 MAX_latches=8430 D5_ons=4 elapsed_ms=1000\n"
+        },
+        {
+          "name": "finish_flash_inverted",
+          "exit": 0,
+          "output": "PASS finish_flash_inverted | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000\n"
+        },
+        {
+          "name": "finish_flash_millis_rollover",
+          "exit": 0,
+          "output": "PASS finish_flash_millis_rollover | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000\n"
+        },
+        {
+          "name": "finish_flash_reset_cancel",
+          "exit": 0,
+          "output": "PASS finish_flash_reset_cancel | I2C_reads=3174 MAX_latches=8510 D5_ons=2 elapsed_ms=0\n"
+        },
+        {
+          "name": "finish_flash_serial_latency",
+          "exit": 0,
+          "output": "PASS finish_flash_serial_latency | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000\n"
+        },
+        {
+          "name": "finish_flash_upright",
+          "exit": 0,
+          "output": "PASS finish_flash_upright | I2C_reads=3181 MAX_latches=8526 D5_ons=4 elapsed_ms=60000\n"
+        }
+      ]
+    },
+    {
+      "suite": "preset_behavior",
+      "flags": [],
+      "cases": [
+        {
+          "name": "menu_actual_frames_and_wrap",
+          "exit": 0,
+          "output": "PASS menu_actual_frames_and_wrap | elapsed_ms=0 duration_ms=60000 D5_ons=0 MAX_latches=2054 I2C_reads=737\n"
+        },
+        {
+          "name": "menu_sensor_missing_flat_and_flip",
+          "exit": 0,
+          "output": "PASS menu_sensor_missing_flat_and_flip | elapsed_ms=32 duration_ms=30000 D5_ons=1 MAX_latches=1390 I2C_reads=391\n"
+        },
+        {
+          "name": "menu_simultaneous_and_bounce",
+          "exit": 0,
+          "output": "PASS menu_simultaneous_and_bounce | elapsed_ms=0 duration_ms=300000 D5_ons=0 MAX_latches=1062 I2C_reads=364\n"
+        },
+        {
+          "name": "menu_timer_millis_rollover",
+          "exit": 0,
+          "output": "PASS menu_timer_millis_rollover | elapsed_ms=30000 duration_ms=30000 D5_ons=4 MAX_latches=4926 I2C_reads=1809\n"
+        },
+        {
+          "name": "pause_hold_reset_flip_preserve_10m",
+          "exit": 0,
+          "output": "PASS pause_hold_reset_flip_preserve_10m | elapsed_ms=880 duration_ms=600000 D5_ons=3 MAX_latches=2758 I2C_reads=988\n"
+        },
+        {
+          "name": "preset_10_minutes",
+          "exit": 0,
+          "output": "PASS preset_10_minutes | elapsed_ms=600000 duration_ms=600000 D5_ons=4 MAX_latches=80910 I2C_reads=30306\n"
+        },
+        {
+          "name": "preset_1_minute",
+          "exit": 0,
+          "output": "PASS preset_1_minute | elapsed_ms=60000 duration_ms=60000 D5_ons=4 MAX_latches=8854 I2C_reads=3293\n"
+        },
+        {
+          "name": "preset_2_minutes",
+          "exit": 0,
+          "output": "PASS preset_2_minutes | elapsed_ms=120000 duration_ms=120000 D5_ons=4 MAX_latches=16862 I2C_reads=6296\n"
+        },
+        {
+          "name": "preset_30_seconds",
+          "exit": 0,
+          "output": "PASS preset_30_seconds | elapsed_ms=30000 duration_ms=30000 D5_ons=4 MAX_latches=4926 I2C_reads=1809\n"
+        },
+        {
+          "name": "preset_3_minutes",
+          "exit": 0,
+          "output": "PASS preset_3_minutes | elapsed_ms=180000 duration_ms=180000 D5_ons=4 MAX_latches=24878 I2C_reads=9299\n"
+        },
+        {
+          "name": "preset_5_minutes",
+          "exit": 0,
+          "output": "PASS preset_5_minutes | elapsed_ms=300000 duration_ms=300000 D5_ons=4 MAX_latches=40894 I2C_reads=15303\n"
+        },
+        {
+          "name": "red_2000ms_and_immediate_start",
+          "exit": 0,
+          "output": "PASS red_2000ms_and_immediate_start | elapsed_ms=1 duration_ms=60000 D5_ons=1 MAX_latches=1726 I2C_reads=617\n"
+        },
+        {
+          "name": "red_held_at_boot",
+          "exit": 0,
+          "output": "PASS red_held_at_boot | elapsed_ms=0 duration_ms=60000 D5_ons=0 MAX_latches=1006 I2C_reads=358\n"
+        },
+        {
+          "name": "running_paused_long_red_only_resets",
+          "exit": 0,
+          "output": "PASS running_paused_long_red_only_resets | elapsed_ms=0 duration_ms=60000 D5_ons=2 MAX_latches=2014 I2C_reads=722\n"
+        },
+        {
+          "name": "ten_minute_timer_millis_rollover",
+          "exit": 0,
+          "output": "PASS ten_minute_timer_millis_rollover | elapsed_ms=600000 duration_ms=600000 D5_ons=4 MAX_latches=80910 I2C_reads=30306\n"
+        }
+      ]
+    },
+    {
+      "suite": "aux_clock_behavior",
+      "flags": [],
+      "cases": [
+        {
+          "name": "countdown_ceil_exact_end",
+          "exit": 0,
+          "output": "PASS countdown_ceil_exact_end | elapsed_ms=30000 duration_ms=30000 D5_ons=2 sand_latches=4638 clock_latches=334\n"
+        },
+        {
+          "name": "countdown_millis_rollover",
+          "exit": 0,
+          "output": "PASS countdown_millis_rollover | elapsed_ms=30000 duration_ms=30000 D5_ons=2 sand_latches=4638 clock_latches=334\n"
+        },
+        {
+          "name": "fault_freezes_time_with_error",
+          "exit": 0,
+          "output": "PASS fault_freezes_time_with_error | elapsed_ms=5941 duration_ms=30000 D5_ons=1 sand_latches=2302 clock_latches=158\n"
+        },
+        {
+          "name": "finish_flash_clock_steady",
+          "exit": 0,
+          "output": "PASS finish_flash_clock_steady | elapsed_ms=30000 duration_ms=30000 D5_ons=4 sand_latches=4838 clock_latches=334\n"
+        },
+        {
+          "name": "independent_max_buses",
+          "exit": 0,
+          "output": "PASS independent_max_buses | elapsed_ms=0 duration_ms=60000 D5_ons=0 sand_latches=438 clock_latches=46\n"
+        },
+        {
+          "name": "manual_and_horizontal_freeze",
+          "exit": 0,
+          "output": "PASS manual_and_horizontal_freeze | elapsed_ms=4336 duration_ms=30000 D5_ons=1 sand_latches=2910 clock_latches=166\n"
+        },
+        {
+          "name": "reset_and_flip_selected_total",
+          "exit": 0,
+          "output": "PASS reset_and_flip_selected_total | elapsed_ms=0 duration_ms=600000 D5_ons=2 sand_latches=2078 clock_latches=150\n"
+        },
+        {
+          "name": "settings_fault_recovery_stays_visible",
+          "exit": 0,
+          "output": "PASS settings_fault_recovery_stays_visible | elapsed_ms=0 duration_ms=180000 D5_ons=0 sand_latches=1206 clock_latches=62\n"
+        },
+        {
+          "name": "six_choices_and_sand",
+          "exit": 0,
+          "output": "PASS six_choices_and_sand | elapsed_ms=0 duration_ms=60000 D5_ons=0 sand_latches=2270 clock_latches=94\n"
+        }
+      ]
+    }
+  ],
+  "inputs_unchanged": true,
+  "executions": 159,
+  "passed": true,
+  "publication_check_date": "2026-10-24"
+}

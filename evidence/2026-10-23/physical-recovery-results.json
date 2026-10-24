@@ -1,0 +1,48 @@
+{
+  "kind": "physical board with compiled sample-read failure injection; real controller reset + MPU reset/readback + resettling",
+  "electrical_fault_reproduced": false,
+  "original_idle_fault_reproduced": false,
+  "active_time_at_injection_ms": 5000,
+  "frozen_elapsed_ms": 5011,
+  "frozen_grains": "33/3",
+  "same_pose_recovered": true,
+  "recovery_attempts": 2,
+  "completed_effective_ms": 60000,
+  "wall_start_to_done_ms": 62711,
+  "excluded_hold_time_ms": 2711,
+  "completion_grains": "0/36",
+  "user_acceptance": "Automatic recovery without unplugging; three end beeps and three receiving-chamber flashes normal",
+  "user_formal_acceptance": "All normal: green manual pause/resume, near-horizontal hold/release, end three beeps/three flashes",
+  "evidence": [
+    {
+      "utc": "2026-10-23T14:06:21.973929+00:00",
+      "session_s": 82.551,
+      "text": "Started | fw=3.9 state=RUNNING duration_s=60 setting=0 selected=1 editing=1 elapsed_ms=0 remaining_s=60 top_addr=0 grains_near/far=36/0 imu=OK sensor_hold=0 ax/ay/az=6378/3598/-16856 D3/D4=0/1 uptime_ms=92839 sample_age_ms=13 faults=0 recoveries=0 pulses=0 i2c_err=0 rx=14 bus=UNCHECKED logs_dropped=3 bench=1"
+    },
+    {
+      "utc": "2026-10-23T14:06:26.977351+00:00",
+      "session_s": 87.555,
+      "text": "DIAGNOSTIC injected read failure | fw=3.9 state=RUNNING duration_s=60 setting=0 selected=1 editing=1 elapsed_ms=5000 remaining_s=55 top_addr=0 grains_near/far=33/3 imu=OK sensor_hold=0 ax/ay/az=6250/3986/-16696 D3/D4=1/1 uptime_ms=97839 sample_age_ms=8 faults=0 recoveries=0 pulses=0 i2c_err=0 rx=14 bus=UNCHECKED logs_dropped=3 bench=1"
+    },
+    {
+      "utc": "2026-10-23T14:06:27.128786+00:00",
+      "session_s": 87.706,
+      "text": "Status | fw=3.9 state=RUNNING duration_s=60 setting=0 selected=1 editing=1 elapsed_ms=5011 remaining_s=55 top_addr=0 grains_near/far=33/3 imu=READ_ERROR sensor_hold=1 ax/ay/az=6250/3986/-16696 D3/D4=1/1 uptime_ms=98002 sample_age_ms=171 faults=1 recoveries=0 pulses=0 i2c_err=130 rx=0 bus=UNCHECKED logs_dropped=5 bench=1"
+    },
+    {
+      "utc": "2026-10-23T14:06:29.130847+00:00",
+      "session_s": 89.708,
+      "text": "Status | fw=3.9 state=RUNNING duration_s=60 setting=0 selected=1 editing=1 elapsed_ms=5011 remaining_s=55 top_addr=0 grains_near/far=33/3 imu=READ_ERROR sensor_hold=1 ax/ay/az=6250/3986/-16696 D3/D4=1/1 uptime_ms=100002 sample_age_ms=2171 faults=2 recoveries=1 pulses=0 i2c_err=130 rx=0 bus=FREE logs_dropped=5 bench=1"
+    },
+    {
+      "utc": "2026-10-23T14:06:29.697404+00:00",
+      "session_s": 90.275,
+      "text": "Automatic hold released | fw=3.9 state=RUNNING duration_s=60 setting=0 selected=1 editing=1 elapsed_ms=5011 remaining_s=55 top_addr=0 grains_near/far=33/3 imu=OK sensor_hold=0 ax/ay/az=6214/3966/-16708 D3/D4=1/1 uptime_ms=100561 sample_age_ms=1 faults=2 recoveries=2 pulses=0 i2c_err=0 rx=14 bus=FREE logs_dropped=5 bench=1"
+    },
+    {
+      "utc": "2026-10-23T14:07:24.691232+00:00",
+      "session_s": 145.269,
+      "text": "Completed | fw=3.9 state=DONE duration_s=60 setting=0 selected=1 editing=1 elapsed_ms=60000 remaining_s=0 top_addr=0 grains_near/far=0/36 imu=OK sensor_hold=0 ax/ay/az=6208/3956/-16730 D3/D4=1/1 uptime_ms=155550 sample_age_ms=1 faults=2 recoveries=2 pulses=0 i2c_err=0 rx=14 bus=FREE logs_dropped=5 bench=1"
+    }
+  ]
+}
