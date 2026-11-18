@@ -8,6 +8,14 @@ Run the current software checks with `python3 tests/v39/run.py`. Hardware observ
 
 This portfolio release documents the local prototype and its evidence. Development and documentation used AI assistance; school handouts, group records and third-party reference projects are not bundled.
 
+## Hardware demonstration
+
+[![The digital hourglass and phone timer side by side](docs/hourglass-demo.jpg)](https://elec281-mc1-video-evidence-20261105.jupiterrip13635.chatgpt.site/)
+
+[Watch the 46-second demo](https://elec281-mc1-video-evidence-20261105.jupiterrip13635.chatgpt.site/) · [Download the MP4 from GitHub](https://github.com/sh1ranY/arduino-digital-hourglass/releases/download/mc1-demo-2026-11-05/ELEC281_MC1_Digital_Hourglass_E14.mp4) · [Video timestamps and evidence](docs/demo-video.md)
+
+The recording shows all six preset choices and one complete 30-second run on hardware. A phone timer provides a visual comparison. See the separate [v3.9 validation record](docs/validation-v3.9.md) for I2C recovery testing.
+
 ## Version status
 
 | Version | Included | Evidence and remaining work |
